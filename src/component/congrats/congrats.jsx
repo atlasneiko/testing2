@@ -14,7 +14,9 @@ const Congrats = ({ success }) => {
   return (
     <div data-test='component-congrats'>
       {success ? (
-        <h1 data-test='congrats-message'>You got the right word!</h1>
+        <h1 data-test='congrats-message' className='alert alert-success'>
+          You got the right word!
+        </h1>
       ) : null}
     </div>
   );
