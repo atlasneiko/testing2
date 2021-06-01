@@ -36,7 +36,7 @@ const GuessedWords = ({ guessedWords }) => {
   return <div data-test='component-guessed-words'>{content}</div>;
 };
 GuessedWords.propTypes = {
-  GuessedWords: propTypes.arrayOf(
+  guessedWords: propTypes.arrayOf(
     propTypes.shape({
       guessedWord: propTypes.string.isRequired,
       letterMatchCount: propTypes.number.isRequired,
